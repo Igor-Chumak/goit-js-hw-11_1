@@ -1,0 +1,131 @@
+:root {
+  --flex-gap: 20px;
+  --bg-color-card: white;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  background-color: darkgrey;
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  background-color: inherit;
+}
+
+.search-form input {
+  font-size: 30px;
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+  margin-bottom: 30px;
+  border: 2px solid rgb(51, 255, 0);
+  border-radius: 10px;
+}
+
+.search-form button {
+  margin: 0 auto;
+  max-width: 200px;
+  font-size: 20px;
+  padding: 10px 30px;
+  border: 3px solid rgb(51, 255, 0);
+  border-radius: 20px;
+  background-color: rgb(220, 255, 196);
+}
+
+.search-form button:hover {
+  background-color: rgb(0, 255, 119);
+}
+
+.search-form button:active {
+  background-color: yellow;
+}
+
+.gallery {
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  gap: var(--flex-gap);
+  /* padding: var(--flex-gap); */
+}
+
+.photo-card {
+  width: calc((1440px - 3 * var(--flex-gap)) / 5);
+  background-color: var(--bg-color-card);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  font-style: italic;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 2px 4px rgba(46, 47, 66, 0.16), 0px 3px 6px rgba(46, 47, 66, 0.08);
+  transition: transform 400ms ease-out;
+}
+
+.photo-card:hover {
+  transform: scale(1.05);
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 10px 0;
+
+}
+
+.info-item b {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-style: normal;
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+.load-more {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black color: rgb(220, 255, 196);
+  padding: 10px 30px;
+
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  border: 3px solid rgb(51, 255, 0);
+  border-radius: 20px;
+}
+
+.load-more:hover {
+  background-color: aqua;
+}
+
+.load-more:active {
+  background-color: yellow;
+}
