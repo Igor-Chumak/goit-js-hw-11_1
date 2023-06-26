@@ -62,8 +62,7 @@ refs.loaderWait.classList.add('is-hidden');
 const options = new URLSearchParams({
   key: API_KEY,
   page: 1,
-  per_page: 12,
-  // per_page: 40,
+  per_page: 40,
   q: null,
   image_type: 'photo',
   orientation: 'horizontal',
